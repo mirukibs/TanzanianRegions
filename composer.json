@@ -13,7 +13,8 @@
         }
     },
     "require": {
-        "laravel/framework": "^11.0"
+        "laravel/framework": "^11.0",
+        "mirukibs/tanzanian-regions": "^1.0@dev"
     },
     "extra": {
         "laravel": {
@@ -21,5 +22,6 @@
                 "TanzanianRegions\\TanzanianRegionsServiceProvider"
             ]
         }
-    }
+    },
+    "version": "1.0.0"
 }
