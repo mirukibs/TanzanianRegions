@@ -1,0 +1,25 @@
+{
+    "name": "mirukibs/tanzanian-regions",
+    "description": "A Laravel package for Tanzanian regions and districts.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "TanzanianRegions\\": "packages/TanzanianRegions/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TanzanianRegions\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "laravel/framework": "^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TanzanianRegions\\TanzanianRegionsServiceProvider"
+            ]
+        }
+    }
+}
