@@ -36,6 +36,9 @@ class TanzanianRegionsServiceProvider extends ServiceProvider
 
             // Publish model files
             __DIR__ . '/../src/Models/' => app_path('Models'),
+
+            // Publish seeder files
+            __DIR__ . '/../src/Database/Seeders/' => database_path('seeders'),
             
             // Publish the config file
             __DIR__ . '/../src/config/tanzania.php' => config_path('tanzania.php'),
