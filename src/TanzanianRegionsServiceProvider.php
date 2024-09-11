@@ -13,10 +13,10 @@ class TanzanianRegionsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Load migrations
+        // Load migrations from your package
         $this->loadMigrationsFrom(__DIR__ . '/../src/Database/Migrations');
 
-        // Load the configuration file
+        // Merge package configuration file
         $this->mergeConfigFrom(
             __DIR__ . '/../src/config/tanzania.php', 'tanzania'
         );
@@ -29,9 +29,16 @@ class TanzanianRegionsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // You can publish the config file if needed
+        // Publish the migration and model files
         $this->publishes([
+            // Publish migration files
+            __DIR__ . '/../src/Database/Migrations/' => database_path('migrations'),
+
+            // Publish model files
+            __DIR__ . '/../src/Models/' => app_path('Models'),
+            
+            // Publish the config file
             __DIR__ . '/../src/config/tanzania.php' => config_path('tanzania.php'),
-        ]);
+        ], 'tanzanian-regions');
     }
 }
