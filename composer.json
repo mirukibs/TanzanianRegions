@@ -4,7 +4,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "TanzanianRegions\\": "packages/TanzanianRegions/src/"
+            "TanzanianRegions\\": "src/"
         }
     },
     "autoload-dev": {

@@ -171,7 +171,7 @@ class ComposerStaticInit22d92d4f7b153a207c0ae97e18130736
         ),
         'TanzanianRegions\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/packages/TanzanianRegions/src',
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Symfony\\Polyfill\\Uuid\\' => 
         array (
